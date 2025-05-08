@@ -51,8 +51,8 @@ require_once 'resume_data.php';
             <section>
                 <h2>PROJECTS</h2> <hr>
                 <?php foreach ($projects as $project): ?>
-                <h4><i><?php echo $project['title']; ?></i></h4>
-                <p><?php echo $project['description']; ?></p>
+                <h4><i><?php echo $project["title"]; ?></i></h4>
+                <p><?php echo $project["description"]; ?></p>
                 <?php endforeach; ?>
             </section>
 

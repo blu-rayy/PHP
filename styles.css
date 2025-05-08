@@ -1,9 +1,13 @@
+html {
+    background-color: antiquewhite;
+}
+
 body {
     margin: 0;
     padding: 0;
 
     font-family: Arial, Helvetica, sans-serif;
-    background-color: #f2f2f2;
+    background-color: antiquewhite;
 }
 
 h1, h2, h3 {
@@ -33,7 +37,7 @@ hr {
 
 .left-section {
     width: 40%;
-    background-color: #107ab0;
+    background-color: #00b4d8;
     padding: 20px;
     box-sizing: border-box;
 }
@@ -55,7 +59,7 @@ hr {
 .profile-image img {
     width: 200px;
     height: 200px;
-    border-radius: 50%;  /* This makes the image circular */
+    border-radius: 50%; 
     object-fit: cover;
     border: 0px;
 }
