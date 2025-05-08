@@ -42,6 +42,15 @@ require_once 'resume_data.php';
                 <h2>CAREER OBJECTIVES</h2> <hr>
                 <p> <?php echo $objectives ?> </p>
             </section>
+            <br>
+            <section>
+                <h2>TECHNICAL SKILLS</h2> <hr>
+                <p> <?php echo $techskills ?></p>
+            </section>
+            <br>
+            <section>
+                <h2>PROJECTS</h2>
+            </section>
 
         </div>
     </div>
