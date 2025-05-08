@@ -1,26 +1,5 @@
 <?php
-$name = "Kristian Bautista";
-$email = "kristiandavidbautista@gmail.com";
-$phone = "+63 9494282770";
-$address = "Eight North House, Rizal";
-
-$education1 = [
-    "school"=> "Child Jesus of Prague School",
-    "degree"=> "STEM Graduate",
-    "years" => "2020 - 2023",
-];
-
-$education2 = [
-    "school"=> "FEU Institute of Technology",
-    "degree"=> "BS Computer Science in Software Eng.",
-    "years" => "2023 - 2027",
-];
-
-$objectives = "Motivated and detail-oriented Computer Science student seeking an entry-level software development role where I can apply my programming skills,
-problem-solving abilities, and passion for contributing on real-world projects. I aim to grow professionally in a collaborative environment, and personally,
-honing my soft skills to be a better, well-rounded person.
-"
-
+require_once 'resume_data.php';
 ?>
 
 <!DOCTYPE html>
@@ -35,32 +14,35 @@ honing my soft skills to be a better, well-rounded person.
 <body>
     <div class="resume-container">
         <div class ="left-section">
+            <div class="profile-image">
+                <img src="assets/profile.png" alt="Profile Photo">
+            </div>
             <h1> <?php echo $name ?> </h1>
-            <p>Email: <?php echo $email ?> </p>
-            <p>Phone: <?php echo $phone ?> </p>
-            <p>Address: <?php echo $address ?> </p>
+            <p><b>Email: </b> <?php echo $email ?> </p>
+            <p><b>Phone: </b> <?php echo $phone ?> </p>
+            <p><b>Address: </b> <?php echo $address ?> </p>
 
-            <br><br>
+            <br>
 
             <h3>QUALIFICATIONS</h3>
-            <p>Excellent leadership skills in group settings. Always producing high quality performance</p>
-            <p>Knowledge in technical skills such as efficiently solving Algorithms, knowledge in programming languages such as PHP, C++, Java, Python, JavaScript, and SQL</p>
-            <p>Developed Soft Skills such necessary in any work environment. Ability to efficiently and work collaborately in any setting.</p>
+            <p> <?php echo $qualification1 ?> </p>
+            <p> <?php echo $qualification2 ?> </p>
+            <p> <?php echo $qualification3 ?> </p>
 
-            <br><br>
             <h3>EDUCATION</h3>
-            <p> <?php echo $education2["school"] ?></p>
-            <p> <?php echo $education2["degree"]. "<br>". $education2["years"] ?></p> <br><br>
+            <p> <b><i> <?php echo $education["school"] ?> </i></b></p>
+            <p> <?php echo $education["degree"]. "<br>". $education["years"] ?> </p>
+            <p> <?php echo $education["attainments"] ?></p>
+            <p> <?php echo $education["affiliations"] ?></p>
 
-            <p> <?php echo $education1["school"] ?></p>
-            <p> <?php echo $education1["degree"]. "<br>". $education1["years"] ?></p> <br><br>
         </div>
 
         <div class ="right-section">
             <section>
-                <h2>Career Objectives</h2>
+                <h2>CAREER OBJECTIVES</h2> <hr>
                 <p> <?php echo $objectives ?> </p>
             </section>
+
         </div>
     </div>
 
