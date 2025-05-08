@@ -15,7 +15,7 @@ require_once 'resume_data.php';
     <div class="resume-container">
         <div class ="left-section">
             <div class="profile-image">
-                <img src="assets/profile.png" alt="Profile Photo">
+                <img src="profile.png" alt="Profile Photo">
             </div>
             <h1> <?php echo $name ?> </h1>
             <p><b>Email: </b> <?php echo $email ?> </p>
@@ -49,7 +49,11 @@ require_once 'resume_data.php';
             </section>
             <br>
             <section>
-                <h2>PROJECTS</h2>
+                <h2>PROJECTS</h2> <hr>
+                <?php foreach ($projects as $project): ?>
+                <h4><i><?php echo $project['title']; ?></i></h4>
+                <p><?php echo $project['description']; ?></p>
+                <?php endforeach; ?>
             </section>
 
         </div>
