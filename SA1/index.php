@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+    <!DOCTYPE html>
 
 <head>
     <link rel="stylesheet" href="styles.css">
@@ -6,7 +6,7 @@
     <title>Bautista SA1</title>
 </head>
 <body>
-    <h1 align = "center" padding = "10px"> Multiplcation Table </h1>
+    <h1 align = "center" padding = "10px"> Multiplication Table </h1>
 
     <table>
         <?php 
@@ -17,7 +17,7 @@
 
                 $evenBox = ($row + $col) % 2 == 0;
                 $cellClass = $evenBox ? 'cell-even' : 'cell-odd';
-                echo "<td class = '$cellClass'>$value</td>";
+                echo "<td class = '$cellClass'> $value </td>";
             }
             echo "</tr>";
         }
